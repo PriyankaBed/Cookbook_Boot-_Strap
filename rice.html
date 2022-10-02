@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Risotto</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"/>
+  
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+      rel="stylesheet"/>
+    <!--imported icons. I used Boxicons instead of font awesome-->
+  </head>
+
+  <body id="body-pd">
+    <header class="header" id="header">
+      <div class="header_toggle">
+        <i class="bx bx-menu" id="header-toggle"></i>
+      </div>
+    </header>
+    <div class="l-navbar" id="nav-bar">
+      <nav class="nav">
+        <div>
+          <a href="./index.html" class="nav_logo">
+            <i class="bx bx-food-menu nav_icon"></i>
+            <span class="nav_logo-name">Home</span>
+          </a>
+          <div class="nav_list">
+            <a href="./pizza.html" class="nav_link">
+              <i class="bx bx-baguette nav_icon"></i>
+              <span class="nav_name">Pizza</span>
+            </a>
+            <a href="./pasta.html" class="nav_link">
+              <i class="bx bx-bowl-hot nav_icon"></i>
+              <span class="nav_name">Pasta</span>
+            </a>
+            <a href="./rice.html" class="nav_link">
+              <i class="bx bx-bowl-rice nav_icon"></i>
+              <span class="nav_name">Rice</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <h1>Gourmet Mushroom Risotto</h1>
+    <h4>Good soup</h4>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/srqZ5jsvXEc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h6> 04 August 2022</h6>
+    <h6>Total Making Time: 20 mins</h6>
+    <button type="button" class="btn btn-dark" onclick="shareAlert()" >Share</button>
+    <br><br>
+    
+    <h4>Directions</h4>
+    <p>1. warm the stock over low heat.</p>
+    <p>2. Preparation: Roughly slice Portobello and chestnut mushrooms. Soak the porcini mushrooms in hot stock/water for 20 minutes, then drain well and keep the liquids. Finely chop onion and parsley, crush garlic cloves.</p>
+    <span id="dots">...</span><span id="more">
+    <p>3. Heat 2-3 tablespoons olive oil in a large saucepan over medium-high heat. Stir in the Portobello and chestnut mushrooms, and cook until soft, about 5 minutes. add porcini mushrooms and cook 2 min more. Remove mushrooms and their liquid, set aside.</p>
+    <p>4. In the same saucepan heat 1-2 tablespoons olive oil and 1 tablespoon butter. Add onion and garlic. Sauté 2 minutes. Add rice, stirring to coat with oil, about 2 minutes. pour in wine, stirring constantly until the wine is fully absorbed. Add 1/2 cup stock to the rice, and stir until the stock is absorbed. Continue adding broth 1/2 cup at a time, stirring continuously. Wait until the stock is almost completely absorbed before adding the next 1/2 cup. Pour in warm porcini soaking liquids, keep stirring.</p>
+    <p>5. After approximately 14-16 minutes stir in the mushrooms. Continue adding stock, 1/2 cup at a time, stirring continuously, Until the liquid is absorbed, and the rice is al dente, total cooking time should be about 20 minutes. </p>
+    <p>6. Turn the heat off, stir in parmesan, butter and parsley. Season with salt and pepper.</p>
+    </span>
+    <button  onclick="collaps()" id="readBtn">Read more</button>
+
+    <div class="col-12 ">
+      <table class="table table-striped table-hover">
+          <thead>
+              <tr>
+                  <th scope="col">Index</th>
+                  <th scope="col">Ingredients</th>
+                  <th scope="col">Checklist</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <th scope="row">1</th>
+                  <td>300g (11/2 cups) Arborio rice</td>
+                  <th><input type="checkbox" class="Ingredients" name="Ingredients"
+                    value=""></th>
+              </tr>
+              <tr>
+                  <th scope="row">2</th>
+                  <td>200g (7 oz) white button mushrooms/ chestnut mushroom</td>
+                  <th><input type="checkbox" class="Ingredients" name="Ingredients"
+                    value=""></th>
+                </tr>
+              <tr>
+                  <th scope="row">3</th>
+                  <td>200g (7 oz) Portobello mushrooms</td>
+                  <th><input type="checkbox" class="Ingredients" name="Ingredients"
+                    value=""></th>
+                </tr>
+              <tr>
+                  <th scope="row">4</th>
+                  <td> 40g (1.4oz) dried porcini mushrooms</td>
+                  <th><input type="checkbox" class="Ingredients" name="Ingredients"
+                    value=""></th>
+                </tr>
+              <tr>
+                  <th scope="row">5</th>
+                  <td> 3-4 tablespoons olive oil</td>
+                  <th><input type="checkbox" class="Ingredients" name="Ingredients"
+                    value=""></th>
+                </tr>
+              <tr>
+                  <th scope="row">6</th>
+                  <td>45g+15g (3 tbsp+ 1 tbsp) butter</td>
+                  <th><input type="checkbox" class="Ingredients" name="Ingredients"
+                    value=""></th>
+                </tr>
+              <tr>
+                  <th scope="row">7</th>
+                  <td> 1/2 cup (120ml) dry white wine</td>
+                  <th><input type="checkbox" class="Ingredients" name="Ingredients"
+                    value=""></th>
+                </tr>
+              <tr>
+                  <th scope="row">8</th>
+                  <td> 1/2 onion</td>
+                  <th><input type="checkbox" class="Ingredients" name="Ingredients"
+                    value=""></th>
+              </tr>
+              <tr>
+                  <th scope="row">9</th>
+                  <td> 2 garlic cloves</td>
+                  <th><input type="checkbox" class="Ingredients" name="Ingredients"
+                    value=""></th>
+              </tr>
+              <tr>
+                  <th scope="row">10</th>
+                  <td> 1.6-1.8L (7-8cups) chicken/vegetable stock</td>
+                  <th><input type="checkbox" class="Ingredients" name="Ingredients"
+                    value=""></th>
+                </tr>
+              <tr>
+                  <th scope="row">11</th>
+                  <td> 1 tsp fresh thyme</td>
+                  <th><input type="checkbox" class="Ingredients" name="Ingredients"
+                    value=""></th>
+              </tr>
+              <tr>
+                  <th scope="row">12</th>
+                  <td> 50g (1/2 cup) grated parmesan + more for topping (optional)</td>
+                  <th><input type="checkbox" class="Ingredients" name="Ingredients"
+                    value=""></th>
+                </tr>
+              <tr>
+                  <th scope="row">13</th>
+                  <td> 1/4 bunch parsley</td>
+                  <th><input type="checkbox" class="Ingredients" name="Ingredients"
+                    value=""></th>
+              </tr>
+              <tr>
+                  <th scope="row">14</th>
+                  <td> Salt, pepper</td>
+                  <th><input type="checkbox" class="Ingredients" name="Ingredients"
+                    value=""></th>
+              </tr>
+          </tbody>
+      </table>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+    <script>
+      //document.getElementsByClassName('btn').addEventListener('onclick', "Thanks for sharing!");
+     // let button= document.getElementsByClassName('btn')   -   tried to make it work even if i have multiple buttons. tried to get doc by class
+      function shareAlert(){
+        alert("Thank you for sharing");
+      };
+    </script>
+  </body>
+</html>
